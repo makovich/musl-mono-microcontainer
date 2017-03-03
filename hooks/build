@@ -9,5 +9,4 @@ echo "Build ARGs: IMAGE_NAME=$IMAGE_NAME; BUILD_SHA=$BUILD_SHA; BUILD_DATE=$BUIL
 docker build --build-arg BUILD_DATE=$BUILD_DATE \
              --build-arg VCS_REF=$BUILD_SHA \
              --build-arg VERSION=$VERSION \
-             -f docker/Dockerfile.runtime \
              -t $IMAGE_NAME .

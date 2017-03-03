@@ -3,7 +3,7 @@
 
 packages/
 artifacts/
-docker/runtime.tar
+!.gitignore
 
 [Dd]ebug/
 [Rr]elease/
