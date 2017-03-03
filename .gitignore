@@ -1,0 +1,10 @@
+.paket/paket.exe
+.fake/
+
+packages/
+artifacts/
+docker/runtime.tar
+
+[Dd]ebug/
+[Rr]elease/
+*.userprefs

@@ -1,0 +1,16 @@
+source https://www.nuget.org/api/v2
+nuget Microsoft.Owin
+nuget Microsoft.Owin.Hosting
+nuget Microsoft.Owin.Host.HttpListener
+nuget Mono.Posix
+
+group Testing
+  framework: net45
+  source https://www.nuget.org/api/v2
+  nuget Fixie
+  nuget Shouldly
+
+group Tools
+  source https://www.nuget.org/api/v2
+  nuget FAKE
+  nuget FSharp.Compiler.Tools

@@ -1,0 +1,10 @@
+FROM makovich/alpine-mono-sdk:0.6
+
+ENV SRC /src
+ENV ARTIFACTS ${SRC}/artifacts
+
+COPY . ${SRC}
+WORKDIR ${SRC}
+RUN ./build.sh
+
+WORKDIR ${ARTIFACTS}

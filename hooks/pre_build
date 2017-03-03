@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BUILD_SHA=`git rev-parse --short HEAD`
+BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+
+echo "Pre-build ARGs: IMAGE_NAME=$IMAGE_NAME-build; BUILD_SHA=$BUILD_SHA; BUILD_DATE=$BUILD_DATE"
+
+docker build -f docker/Dockerfile.build
+             -t $IMAGE_NAME-build .
+
+docker run --rm $IMAGE_NAME-build cat runtime.tar > docker/runtime.tar

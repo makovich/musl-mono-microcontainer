@@ -1,0 +1,4 @@
+Microsoft.Owin
+Microsoft.Owin.Hosting
+Microsoft.Owin.Host.HttpListener
+Mono.Posix
